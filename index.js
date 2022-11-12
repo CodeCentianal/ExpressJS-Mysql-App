@@ -10,11 +10,11 @@ app.use(morgan(':method :url :status :res[content-length] :response-time :date[w
 
 
 app.get('/', (req, res)=>{
-  res.send('Hello wolrd');
+  res.send('Hello wolrd!');
 })
 
 app.listen(port,(err)=>{
     if(err) throw err;
-    console.log("listening to the port!")
+    console.log(`istening to the port! ${port}`);
 })
 
